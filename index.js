@@ -918,15 +918,11 @@ RedisClient.prototype.auth = RedisClient.prototype.AUTH = function (pass, callba
     }
 };
 
-<<<<<<< HEAD
-    if (Array.isArray(args) && (typeof callback === "function" || callback === undefined)) {
-        return this.send_command("hmset", args, callback);
-=======
+
 RedisClient.prototype.hmset = RedisClient.prototype.HMSET = function (key, args, callback) {
     var field, tmp_args;
     if (Array.isArray(key)) {
         return this.send_command("hmset", key, args);
->>>>>>> 977d4dba2b97811eea374e0dd9b21e24c2f2441f
     }
     if (Array.isArray(args)) {
         return this.send_command("hmset", [key].concat(args), callback);
