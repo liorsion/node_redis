@@ -1,10 +1,7 @@
 node_modules
 .tern-port
-<<<<<<< HEAD
 .idea
-=======
 .nyc_output
 coverage
 npm-debug.log
 *.rdb
->>>>>>> 977d4dba2b97811eea374e0dd9b21e24c2f2441f
